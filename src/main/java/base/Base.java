@@ -5,9 +5,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
 
+    public WebDriver driver;
+
     public WebDriver initializer(){
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        return driver;
+        return driver = new ChromeDriver();
     }
 }
