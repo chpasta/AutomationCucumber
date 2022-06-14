@@ -24,6 +24,7 @@ public class StepDefinitionTest extends Base {
         FillLoginFields fillLoginFields = new FillLoginFields(driver);
         fillLoginFields.userName().sendKeys(strArg1);
         fillLoginFields.password().sendKeys(strArg2);
+        fillLoginFields.submitButton().click();
     }
 
     @Then("^Verify that user is successfully  logged in$")
